@@ -2,9 +2,8 @@
 // и выдает, является ли число четным
 Console.WriteLine("введите число:");
 int a = Convert.ToInt32(Console.ReadLine());
-b=a%2*2;
 
-if (b == a)
+if (a%2==0)
 {
        Console.WriteLine($"Число {a} четное");
 }
