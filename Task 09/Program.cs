@@ -20,8 +20,8 @@ int MaxDigit(int num)
 {
     int firstDigit = num / 10;
     int secondDigit = num % 10;
-    return firstDigit>secondDigit ? firstDigit : secondDigit;
-    
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
+
     // if (firstDigit > secondDigit) return firstDigit;
     // else return secondDigit;
 
