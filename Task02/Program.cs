@@ -6,9 +6,9 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число 2:");
 int b = Convert.ToInt32(Console.ReadLine());
 
-if (a==b)
+if (a == b)
 {
-   Console.WriteLine($"Число {a} равно {b}");
+    Console.WriteLine($"Число {a} равно {b}");
 }
 else
 {

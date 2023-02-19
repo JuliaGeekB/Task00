@@ -7,4 +7,4 @@ if (number >= 100 && number <= 999)
     int lastNumber = number % 10;
     Console.Write($"Последняя цифра числа - {lastNumber}");
 }
-else Console.WriteLine ("Вы ввели не трехзначное число!");
+else Console.WriteLine("Вы ввели не трехзначное число!");

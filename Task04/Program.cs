@@ -8,9 +8,9 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число 3:");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if (a>b)
+if (a > b)
 {
-    if (a>c)
+    if (a > c)
     {
         Console.WriteLine($"Максимальное число {a}");
     }
@@ -21,7 +21,7 @@ if (a>b)
 }
 else
 {
-    if (b>c)
+    if (b > c)
     {
         Console.WriteLine($"Максимальное число {b}");
     }
