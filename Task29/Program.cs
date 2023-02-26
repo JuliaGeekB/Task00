@@ -3,24 +3,35 @@
 
 Console.WriteLine("Сколько элементов в массиве: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int[] array = NewRandomArray(number);
-Console.WriteLine($"Полученный массив из {number}элементов");
+Console.WriteLine("Какой минимальный элемент в массиве: ");
+int minimum = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Какой максимальный элемент в массиве: ");
+int maximum = Convert.ToInt32(Console.ReadLine());
+
+int[] array = NewRandomArray(number, minimum, maximum);
+Console.WriteLine($"Полученный массив из {number} случайных чисел");
 PrintArray(array);
 
-int[] NewRandomArray(int num)
+int[] NewRandomArray(int num, int min, int max)
 {
     Random rand = new Random();
     int[] arr = new int[num];
     for (int i = 0; i < num; i++)
     {
-        arr[i] = rand.Next();
+        arr[i] = rand.Next(min, max + 1);
     }
     return arr;
 }
 
 void PrintArray(int[] arr)
 {
-    Console.Write("[");
+    Console.Write("");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1) Console.Write($",  ");
+    }
+    Console.Write(" -> [");
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write($"{arr[i]}");
