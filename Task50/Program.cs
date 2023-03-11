@@ -57,7 +57,11 @@ int[,] array2d = CreateMatrixRndInt(4, 4, -10, 10);
 PrintMatrix(array2d);
 int indexi = PromptIndexi("Введите номер строки элемента: ");
 int indexj = PromptIndexj("Введите номер столбца элемента: ");
-bool requestElement = RequestElement(array2d, indexi, indexj);
+if (indexi>0 && indexj>0)
+{
+     bool requestElement = RequestElement(array2d, indexi, indexj);
 
-Console.WriteLine(requestElement ? "Такого элемента в массиве нет" : " ");
-Console.Write($"{array2d[indexi, indexj]}");
+     Console.WriteLine(requestElement ? "Такого элемента в массиве нет" : " ");
+     Console.Write($"{array2d[indexi, indexj]}");
+}
+else Console.WriteLine ("Ошибка ввода");
