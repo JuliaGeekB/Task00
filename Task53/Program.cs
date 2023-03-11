@@ -28,15 +28,15 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void Replace (int[,] matrix)
+void Replace(int[,] matrix)
 {
-    int firstRow=0;
-    int lastRow=matrix.GetLength(0)-1;
+    int firstRow = 0;
+    int lastRow = matrix.GetLength(0) - 1;
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        int temp = matrix[firstRow,j];
-        matrix[firstRow,j]=matrix[lastRow,j];
-        matrix[lastRow,j]=temp;
+        int temp = matrix[firstRow, j];
+        matrix[firstRow, j] = matrix[lastRow, j];
+        matrix[lastRow, j] = temp;
     }
 }
 
